@@ -1,13 +1,8 @@
 streamlit==1.29.0
 pandas==2.2.2
-# Allow pip to select a numpy wheel compatible with the target Python/runtime
 numpy>=1.24,<2
 scikit-learn==1.7.2
 joblib==1.3.2
 matplotlib==3.8.4
 
-# Note: heavy packages such as torch/torchvision and ipywidgets are excluded because
-# many deployment platforms (Streamlit Cloud, Heroku) have limited build resources
-# and may fail when compiling or installing large binaries. If you need PyTorch,
-# deploy to a platform that supports GPU or prebuilt wheels (or use a separate
-# microservice for model inference).
+
