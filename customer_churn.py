@@ -17,9 +17,9 @@ def load_churn_model():
 	return model, preprocessor
 
 def main():
-	st.title(':blue-background[CUSTOMER CHURN PREDICTION]')
-	st.subheader('Use this app to predict whether a Bank customer will churn or not, based on their profile, engagement metrics and spending behavior.')
-	st.write(':blue-background[Please fill all the required fields from the list or by increasing/decreasing values using +/- signs.Then click **Predict churn** button below to see the prediction results.]')
+	st.title(':gray-background[CUSTOMER CHURN PREDICTION]')
+	st.subheader('Use this app to predict whether a Bank customer will churn based on their profile, engagement metrics and spending behavior.')
+	st.write('Please fill all the required fields from the list or by increasing/decreasing values using +/- signs.Then click **Predict churn** button below to see the prediction results.')
 
 	model, preprocessor = load_churn_model()
 
